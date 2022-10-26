@@ -1,0 +1,322 @@
+{
+	"info": {
+		"_postman_id": "aedc88eb-1e2a-4417-8c20-2597105dff58",
+		"name": "Module 4: Database design Jyoshna priya",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23843479"
+	},
+	"item": [
+		{
+			"name": "customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"NAME\": \"Jyoshna priya buddhi\",\n\t\"FIRST_NAME\": \"Jyoshna\",\n    \"MIDDLE_NAME\":\"priya\",\n\t\"LAST_NAME\": \"buddhi\",\n\t\"DATE_OF_BIRTH\": \"08/22/1999\",\n\t\"GENDER\":\"F\"\n},\n{\n\t\"NAME\": \"Gab G Pate\",\n\t\"FIRST_NAME\": \"Gabe\",\n    \"MIDDLE_NAME\":\"G\",\n\t\"LAST_NAME\": \"Pate\",\n\t\"DATE_OF_BIRTH\": \"12/22/1991\",\n\t\"GENDER\":\"F\"\n},\n{\n\t\"NAME\": \"Doug D Howarth\",\n\t\"FIRST_NAME\": \"Doug\",\n    \"MIDDLE_NAME\":\"D\",\n\t\"LAST_NAME\": \"Howarth\",\n\t\"DATE_OF_BIRTH\": \"06/02/1999\",\n\t\"GENDER\":\"M\"\n},\n{\n\t\"NAME\": \"Court C Mayes\",\n\t\"FIRST_NAME\": \"Court\",\n    \"MIDDLE_NAME\":\"C\",\n\t\"LAST_NAME\": \"Mayes\",\n\t\"DATE_OF_BIRTH\": \"08/12/2001\",\n\t\"GENDER\":\"F\"\n},\n{\n\t\"NAME\": \"Ramee A Croft\",\n\t\"FIRST_NAME\": \"Ramee\",\n    \"MIDDLE_NAME\":\"A\",\n\t\"LAST_NAME\": \"Croft\",\n\t\"DATE_OF_BIRTH\": \"02/19/1996\",\n\t\"GENDER\":\"M\"\n},\n{\n\t\"NAME\": \"Isaa I Knowx\",\n\t\"FIRST_NAME\": \"Isaa\",\n    \"MIDDLE_NAME\":\"I\",\n\t\"LAST_NAME\": \"knowx\",\n\t\"DATE_OF_BIRTH\": \"01/15/1997\",\n\t\"GENDER\":\"M\"\n},\n{\n\t\"NAME\": \"Sadie S Amos\",\n\t\"FIRST_NAME\": \"Sadie\",\n    \"MIDDLE_NAME\":\"S\",\n\t\"LAST_NAME\": \"Amos\",\n\t\"DATE_OF_BIRTH\": \"03/16/1999\",\n\t\"GENDER\":\"M\"\n},\n{\n\t\"NAME\": \"Colm C Avery\",\n\t\"FIRST_NAME\": \"Colm\",\n    \"MIDDLE_NAME\":\"C\",\n\t\"LAST_NAME\": \"Avery\",\n\t\"DATE_OF_BIRTH\": \"02/22/1991\",\n\t\"GENDER\":\"M\"\n},\n{\n\t\"NAME\": \"Samina L Leach\",\n\t\"FIRST_NAME\": \"Samina\",\n    \"MIDDLE_NAME\":\"L\",\n\t\"LAST_NAME\": \"Leach\",\n\t\"DATE_OF_BIRTH\": \"07/12/2000\",\n\t\"GENDER\":\"F\"\n},\n{\n\t\"NAME\": \"Amiya A Jara\",\n\t\"FIRST_NAME\": \"Amiya\",\n    \"MIDDLE_NAME\":\"A\",\n\t\"LAST_NAME\": \"Jara\",\n\t\"DATE_OF_BIRTH\": \"02/12/1994\",\n\t\"GENDER\":\"F\"\n}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"LOANLEDGERID\":\"6358bd8401600639dcfb2032\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/customer/6358b2b801600639dcfb200f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"6358b2b801600639dcfb200f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/customer/6358b2b801600639dcfb2012",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"customer",
+						"6358b2b801600639dcfb2012"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loans",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n{\n\t\"Loan_TYPE\":\"Home\",\n\t\"LOAN_NUMBER\":3978246,\n\t\"AMOUNT\":5000,\n\t\"INTEREST_RATE\":21,\n\t\"LOAN_TERM\":10,\n\t\"START_DATE\":\"07/15/2022\"\n},\n{\n\t\"Loan_TYPE\":\"Auto\",\n\t\"LOAN_NUMBER\":5463432,\n\t\"AMOUNT\":4000,\n\t\"INTEREST_RATE\":9,\n\t\"LOAN_TERM\":1,\n\t\"START_DATE\":\"01/18/2022\"\n},\n\n{\n\t\"Loan_TYPE\":\"Life\",\n\t\"LOAN_NUMBER\":9873983,\n\t\"AMOUNT\":9000,\n\t\"INTEREST_RATE\":2,\n\t\"LOAN_TERM\":9,\n\t\"START_DATE\":\"03/22/2022\"\n}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loans",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"CUSTOMER\":\"6358b2b801600639dcfb200f\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan/6358bc5601600639dcfb2028",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan",
+						"6358bc5601600639dcfb2028"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loans",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loan/6358bc5601600639dcfb2028",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loan",
+						"6358bc5601600639dcfb2028"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loanledger",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n\t{\n\t\t\"PAYMENT_AMOUNT\": 1000,\n\t\t\"INTEREST\": 3,\n\t\t\"PRINCIPAL\": 2000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 1000,\n\t\t\"INTEREST\": 3,\n\t\t\"PRINCIPAL\": 2000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 7000,\n\t\t\"INTEREST\": 2,\n\t\t\"PRINCIPAL\": 8000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 1000,\n\t\t\"INTEREST\": 2,\n\t\t\"PRINCIPAL\": 8000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 1500,\n\t\t\"INTEREST\": 9,\n\t\t\"PRINCIPAL\": 3000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 1500,\n\t\t\"INTEREST\": 9,\n\t\t\"PRINCIPAL\": 3000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 500,\n\t\t\"INTEREST\": 6,\n\t\t\"PRINCIPAL\": 5000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 4500,\n\t\t\"INTEREST\": 6,\n\t\t\"PRINCIPAL\": 5000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 3000,\n\t\t\"INTEREST\": 11,\n\t\t\"PRINCIPAL\": 6000\n\t},\n\t{\n\t\t\"PAYMENT_AMOUNT\": 3000,\n\t\t\"INTEREST\": 11,\n\t\t\"PRINCIPAL\": 6000\n\t}\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loanledger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loanledger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loanledger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loanledger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loanledger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loanledger",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"INTEREST\": 7\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loanledger/6358bd8401600639dcfb2033",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loanledger",
+						"6358bd8401600639dcfb2033"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loanledger",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/loanledger/6358bd8401600639dcfb2033",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"loanledger",
+						"6358bd8401600639dcfb2033"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
